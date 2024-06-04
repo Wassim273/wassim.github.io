@@ -1,0 +1,382 @@
+*{
+    font-family: 'Poppins', sans-serif; /*désigne la police de TOUTE la page */
+    box-sizing: border-box;  /* box-sizing définit la façon dont la hauteur et la largeur totale d'un élément est calculée par rapport à un container parent */
+    
+    
+}
+
+html {
+    font-size: 62.5%;
+} 
+
+body {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*C'est pour la police*/
+    font-size: 2rem; /*taille police*/
+    margin:0;  /*La propriété margin définit la taille des marges sur les quatre côtés de l'élément. */
+    line-height: 1.6; /*Pour l'espace entre les lignes*/
+   
+}
+
+h1,h2,h3,h4{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+}
+
+h1,
+.h1 {
+  font-size: 3.1rem;
+}
+
+h2,
+.h2 {
+  font-size: 2.8rem;
+  text-transform: uppercase;/*transforme le texte en majuscule*/
+}
+
+h3,
+.h3 {
+  font-size: 2.1rem;
+}
+h4,
+.h4{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    
+    max-width: 100%; /*la taille prend tout l'écran*/
+    height: auto; /* définit la hauteur de la boîte de contenu d'un élément.*/
+}
+li{
+    margin-bottom: 2rem;/*définit la marge basse appliquée à un élément. (marge entre les textes par exemple)*/
+}
+
+section {
+    color: #000;
+  
+}
+
+.section-title{
+    font-size: 3.8rem;
+
+}
+.sectionheader{
+    text-align: center;
+    
+}
+
+.list-unstyled{
+    list-style: none;
+    margin: 0;
+    padding:0;/*La propriété padding est une propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+    font-size: 1rem;
+}
+
+.container{
+    padding:1rem 2rem;
+
+   
+
+}
+
+.d-flex{
+    display: flex;   /*Pour mettre les éléments à coté des autres */
+    align-items: center; /*pour les centrer*/
+    justify-content: space-between;/*Pour prendre toute la largeur de l'écran*/
+
+}
+
+.grid{ /*pour toutes les grilles*/
+    display: flex;
+    flex-wrap: wrap;/* indique comment sont placés les éléments flexibles */
+    padding:0;
+    text-align: center;
+    
+}
+
+.grid__item{
+    display: inline-block; /*display c'est pour le type d'affichage*/
+   flex-grow: 1;/* définit le facteur d'expansion d'un élément flexible selon sa dimension principale*/
+   flex-shrink: 0;/* définit le facteur de rétrécissement d'un élément flexible. */
+   width: 100%;
+   padding: 1rem;
+   max-width: 800px;
+   margin: 0 auto;
+    
+}
+
+.grid__item img{
+     width:50rem;
+     height: auto;
+     display: block;
+     margin: 0 auto;
+
+     
+}
+
+@media screen and (min-width:750px){ /*Pour les grands écran*/
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+    
+      .grid__item {
+        max-width: 50%;
+      }
+    }
+    
+
+section {
+    padding:9rem 0;
+}
+
+
+.header {
+    background: #ffffff;
+    border-bottom:1px solid; 
+    position: sticky; /*pour que la barre de navigation rest tjrs la haut*/
+    top: 0;
+
+ }
+
+.header .logo{
+    font-family: 'Poppins', sans-serif;
+                                                    /* le site google font pour la police stylé*/
+    letter-spacing: 2px;                                                
+    font-size:1rem ;
+}
+
+.header li{   /* on cible tous les li dans le header */
+    display: inline-flex;
+    align-items: center;
+    padding: 0 .9rem;
+    font-size: 150%;
+}
+
+.header a { /*Cible Les a dzns le header*/
+    color :#333
+}
+.header .right{
+    display: flex;
+    align-items: center;
+
+}
+
+.barre-de-navigation{
+    display: none;
+
+}
+.social-media{
+    display: flex;
+}
+
+
+.burger{
+    background: none;
+    border:none ;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;/*pour que la main s'affcihe lorsque que l'on veut cliquer dessus*/
+    position:relative;
+    margin: 1rem;
+}
+
+.burger .bar{
+    display: block;
+    width:22px;
+    height: 3px;
+    background: #333;
+}
+
+
+.burger .bar::before, .burger .bar::after{
+    display: block;
+    content:"";
+    width: 22px;
+    height: 3px;
+    background: #333;
+    position:absolute;
+}
+
+.burger .bar::before{
+    top:0;
+    transform: translateY(8px);
+}
+
+.burger .bar::after{
+    bottom:0;
+    transform: translateY(-8px);
+}
+
+
+@media screen and (max-width:749px){
+    .section-header{
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (min-width:750px){
+    .barre-de-navigation{
+        display: flex;
+    }
+    .burger{
+        display: none;/*pour le burger s'afface en grand écran*/
+    }
+}
+/*acceuil*/
+.index{
+    background: #033001;
+    color: #fff;
+    padding: 10rem ;
+     
+}
+.index h2{
+    font-size: x-large;
+}
+.index .title{
+    color: white;
+   font-size: 4rem;
+    margin: 1.6rem 0 0 0;/*ça fonctionne dans le sens des aiguilles d'une montre donc 1.6rem en haut 0 a droite 0 en bas et 0 a gauche*/
+    font-weight: 700;
+   
+}
+
+
+.index__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.index__item span{
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+
+
+.about .section-title{
+    margin-top: 2.8rem;
+
+}
+.skills{
+    background :#d3d6db;
+
+}
+
+
+.skills li{
+    background-color: #F5F5F5;
+    border-left: 3px solid;
+    padding:.9rem 2rem;
+}
+
+.skills .progressbar{
+    background: #d3d6db;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skills .bar{
+    background:#058073 ;
+    padding: 2rem;
+    
+}
+
+@media screen and (min-width:750px){
+    .projets .grid__item{
+        max-width:100%;
+    
+    }
+    
+}
+
+
+@media screen and (max-width:749px){
+    .projets .grid__item{
+    max-width:100%;
+    
+}
+}
+.projets {          
+    background: #d3d6db;
+    
+}
+.projets p{
+    font-size: 2rem;
+
+}
+
+.img_cv{
+    background-color: #d3d6db;
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.btn{
+    border: none;
+    width:auto;
+    color: #d3d6db;
+    font-size: 2rem;
+    min-width: 160px;
+    
+}
+
+
+.contact{
+    background: #d3d6db;
+
+}
+
+.form{
+    max-width: 800px;
+    margin:4rem auto 0 auto;
+    
+}
+
+.form input, .form textarea{
+    display: block;
+    width:100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form textarea{
+    min-height: 200px;
+}
+
+.form .btn{
+    border: none;
+    background: #000;
+    width:auto;
+    color: #fff;
+    font-size: 2rem;
+    min-width: 160px;
+    text-transform: uppercase;
+}
+.form .btn:hover{
+    cursor: pointer;
+}
+
+footer{
+    background: #000;
+    color: #eee;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+

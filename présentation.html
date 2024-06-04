@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="feuille.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site web de Wassim</title>
+    <meta name="description" content="Portfolio de Bouali Badis - Étudiant BUT RT">
+    <link rel="icon" type="image/x-icon" href="image/faviconn2.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/global.css">
+    <script src="script.js" defer></script><!--Javascript non réaliser lors du rendu Final-->
+   
+</head>
+
+<body>
+        
+
+ <header class="header montre-bar">
+    <div class="container d-flex"><!-- Les classes sont utilies pour le css c'est pour bien sélectionner ce que l'on veut lorsque que l'on travaille -->
+        
+        <div class="logo">     <!-- Les div servent à établir des parties dans les parties de notre site -->
+           <h1> Belarbi Wassim</h1>
+        </div>
+        <nav class="barre-de-navigation">  <!-- Balise nav pour le menu qui va nous ramener à chaque partie de mon Site-->
+            <ul class="menu list-unstyled">  <!--Balise ul sert a contenir des listes et li est la balise pour faire des listes  --><!-- On utilise a href pour que ça se dirgige sur la bonne parties des sites et on utlise des # pour dire que c'est un chemin -->
+                <li><a href="#index-html">Acceuil</a></li>
+                <li><a href="#about">Moi</a></li> 
+                <li><a href="#Parcours">Parcours</a></li>
+                <li><a href="#skills">Compétences</a></li> 
+                <li><a href="#Projets">Projets</a></li>
+                <li><a href="#CV">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="right">  <!-- J'utilise le nom right car on veut afficher ça à droite de l'écran -->
+            
+        <ul class="social-media"> <!-- DIFF avc la vidéo voir pk -->
+            <li><a href="https://www.instagram.com/wassim.27_/"target="_blank"><!-- Target pour que le site s'affiche sur une autre page lorsque l'on clique sur le lien-->
+                    <svg class="icon insta" widht="50" xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 0 448 512"><path fill="#221f51" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                    </svg><!--Balise utuliser pour importer des icones -->
+                </a>
+            </li> 
+            <li><a href="https://twitter.com/Wassim27_93"target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/>
+                    </svg>
+                </a>
+            </li>
+            
+                </a>
+            </li>
+                <li><a href='https://www.linkedin.com/in/wassim-belarbi-814bb3297/'target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    
+        <button class="burger"><span class="bar">-</span></button>      <!--burger c'est pour créer les 3 petits traits qui vont ouvrir le menu lorsque que la page est petite ou bien sur mobile (non fonctionnel car il faut utiliser javascript)  -->
+    </div>
+    </div>
+ </header>
+ <section id="index-html" class="index"> 
+    <div class="container" class = "hero">
+        <div class="acceuil">
+            <div class="index__item ">
+                <span>Belarbi Wassim</span>
+                <h1 class="title">Mon site Web </h1>
+                    <p>Étudiant en 1ère année de BUT Réseaux et Télécommunications à la Sorbonne Paris Nord.</p>
+            </div>
+           
+        </div>
+ </div>
+</section> <!-- Fin de section pour l'acceuil princiapale-->
+   
+ <section id="about" class="about"> <!-- ID utile pour la navbar en haut pour trouver le chemin-->
+    <div class="container">
+        <div class="sectionheader"> <!-- -->
+        <div class="MOI"> 
+            <h2 class="section-title"> Sur Moi</h2>
+            <h3> Qui suis je ?</h3>
+            <p>Bonjour, je suis Belarbi Wassim, un étudiant de 17 ans en réseaux et télécommunications en région parisienne. Je vous souhaite la bienvenue sur mon site Je me spécialise en cybersécurité pour protéger les systèmes informatiques contre les menaces. Mon objectif est de renforcer la sécurité des infrastructures numériques en développant une expertise en détection de vulnérabilités, prévention d'attaques et gestion des incidents de sécurité." </p>
+            <h3>Qu'est ce que j'aime dans la vie ?</h3>
+            <p>Mon quotidien est ponctué de diverses activités qui reflètent ma soif de découverte et d'épanouissement. Passionné par l'apprentissage, j'apprécie l'acquisition de connaissances grâce à des conférences et à des moments de documentation chez moi. La pratique régulière de différents sports joue un rôle essentiel dans le renforcement de mon esprit d'équipe, tout en contribuant à mon bien-être physique et mental. Par ailleurs, je nourris une affection particulière pour les voyages, qui me permettent d'explorer de nouvelles cultures tout en partageant des moments uniques avec mes proches. Je consacre du temps à la programmation dans divers langages, enrichissant ainsi mon projet professionnel tout en prenant plaisir à explorer différentes langues de programmation. </p>
+        </div>
+       </div>
+    </div>
+ </section>
+ <section id="Parcours" class="parcours">
+    <div class="container">             
+        <div class="sectionheader">
+            <h2 class="section-title">Mon parcours</h2>
+                <p>Concernant mon parcours professionnel, je suis titulaire d'un baccalauréat général spécialité mathématiques et sciences economiques et sociales. Tout au long de ma scolarité je suis passé par : </p>
+                    <ul>
+                        <li><a href="https://veil-aulnaysousbois.webcollege.seinesaintdenis.fr/"target="_blank"> Le collège Simone Veil</a> à Aulnay-sous-bois entre 2016 et 2020 </li>     <!-- Mettre les établissements -->
+                        <li><a href="https://www.lycjzayaulnay.fr/"target="_blank"> Le lycée Jean-Zay </a> à Aulnay-Sous bois entre 2021 et 2023</li>
+                        <li> Et à <a href="https://www.univ-spn.fr/"target="_blank">l'université Sorbonne Paris Nord </a> aujourd'hui en tant qu'étudiant en BUT R&T </li>
+                    </ul>
+                    <p>Dans mes perspectives d'avenir, je cherche à finaliser mon cursus en BUT et à me spécialiser en cybersécurité pour renforcer mes compétences en cyberdéfense. En envisageant la suite, je projette de poursuivre mes études en école d'ingénieur pour obtenir mon diplôme. Mon ambition professionnelle se concentre sur la contribution à la protection des systèmes informatiques, assurant ainsi la sécurité numérique tant des entreprises que des particuliers. </p>
+        </div>
+ </section>
+ <section id="skills" class="skills">
+    <div class="container">
+        <div class="sectionheader">
+            <h2 class="section-title">Mes compétences</h2>
+            <p>Présentation de mes compétences professionnel et techniques</p>
+        </div>
+        <div class="grid"> <!-- Pour faire des grilles-->
+            <div class="grid__item">
+                <h3>Compétences professionnel</h3>
+                <ul class="list-unstyled"> <!-- Pour créer liste qui se reset-->
+                    <li>
+                        <h4>Administrer des réseaux et l'Internet</h4>
+                        <p>Gestion experte des infrastructures informatiques, configuration et suivi des équipements réseau, résolution efficace des problèmes de connectivité pour assurer un fonctionnement optimal des services en ligne.</p>
+                    </li>
+                    <li>
+                        <h4>Créer des outils et applications informatiques </h4>
+                        <p>Maîtrise du développement informatique pour concevoir des outils et applications, assurant ainsi la réponse aux besoins spécifiques et garantissant des fonctionnalités performantes.</p>
+                    </li>
+                    <li>
+                        <h4>Connecter des entreprises et des usagers</h4>
+                        <p>Expertise dans l'établissement de liaisons entre entreprises et utilisateurs, assurant une connectivité fiable, sécurisé et optimale pour faciliter les échanges et renforcer la communication</p>
+                    </li>
+                    <li>
+                        <h4>Assurer la sécurité informatique</h4>
+                        <p>Apprentissage des bases de la sécurité informatique, y compris la mise en place de pare-feu, la détection des intrusions et la protection des données.</p>
+                    </li>
+                    <li>
+                        <h4>Travail d'équipe</h4>
+                        <p>Apprentissage des dynamiques de groupe, collaboration efficace avec des personnes aux compétences diverses et développement de compétences interpersonnelles.</p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="grid__item">
+                <h3>Language maitrisé</h3> <!-- POURfaire les barres-->
+                <div class="progressbar">
+                    <div class="bar" >HTML</div>
+                </div>
+                <div class="progressbar">
+                    <div class="bar">CSS</div>
+                </div>
+                <div class="progressbar">
+                    <div class="bar">LINUX</div>
+                </div>
+                <div class="progressbar">
+                    <div class="bar">PYTHON</div>
+                </div>
+                
+        </div>
+        
+            
+    </div>
+
+</section>
+<section id="Projets" class="projets">
+    <div class="container">
+        <div class="sectionheader">
+            <h2 class="section-title">Mes projets</h2>
+                <h3>J'ai eu l'occasion de réaliser différents projets que je vais vous présenter : </h3>
+            </div>
+                <ul class="grid projets-filters list-unstyled">
+                    <li class="grid__item">
+                        <h3>Vidéo de sensibilisation contre les cyberattaques</h3>
+                        <a href="https://www.youtube.com/watch?app=desktop&v=9Bq9fA7KdIs&feature=youtu.be">
+                            <img src="https://i.pinimg.com/564x/03/24/ec/0324ecd62ddb5c5925e46453092aa379.jpg" alt="Vdéo Sae11" >
+                        </a> 
+                        <p>Lors de ma première année de BUT R&T, avec mon camarade Bouali Badis, nous avons dû réaliser une vidéo de sensibilisation contre les cyberattaques. Par conséquent, nous avons choisi de parler de la manière d'optimiser la sécurité des données sur son smartphone. Je vous laisse cliquer sur l'image ci-dessus si vous souhaitez voir la vidéo.</p>                                                           <!--jsp si je fais comme lui voir plus tard si changement à faire!--> <!-- Essayer de juste faire des images sur lesquel on peut cliquer dc ffaire une liste-->
+                    </li>
+                    <li class="grid__item">
+                        <h3>Conception câble RJ45</h3>
+                        <a href ="https://docs.google.com/document/d/1e7s3SvD55HLGqDSHuMvLMhFK1SGtPhZ9YYSvg7NyyVw/edit">
+                            <img src="https://i.pinimg.com/564x/e9/45/75/e945757b2e98983e79b6ca18fb29a659.jpg" alt="Photo RJ45">
+                        </a>
+                        <p>En compagnie de mon camarade Ilies Lameghaizi nous avons réalisé un compte rendu qui retrace les étapes de la conception d'un cable RJ45. Si comment réaliser ce genre de câble qui est omniprésent dans la vie de nos jours vous intéresse je vous laisse cliquer sur l'image ci-dessus</p>
+                    </li>
+                    <li class="grid__item">
+                        <h3>Création site Internet</h3>
+                        <a href ="http://127.0.0.1:5500/#">
+                            <img src="https://i.pinimg.com/564x/93/ab/0a/93ab0ae21a1be5d6901853a4fce27e7f.jpg" alt="Site Internet">
+                        </a>
+                        <p>Et mon dernier projet en date est la conception même de ce site en compagnie encore une fois de mon camarade Bouali Badis. L'idée de la création de ce site provient d'un projet que nous devions réaliser dans le cadre de la SAÉ14 gérée par Madame Chesneau et <a href="https://lipn.univ-paris13.fr/~petrucci/" target="_blank" rel="noopener noreferrer">Madame Petrucci</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="CV" class="CV">
+    <div class="container">
+        <div class="sectionheader">
+            <div class="cv-text">
+                <h2>Mon <span>CV</span></h2>
+                    <main class="image-cv">
+                <div class="cv"></div>
+            </main>
+        
+                <div class="img_cv">
+                    <img src="img.png" alt="Mon CV">
+                </div>
+
+            <a href="cv.pdf" class="btn" download="Télécharger CV">Télécharger mon CV</a>
+        </div>
+    </div>
+    </div>
+</section>
+ 
+
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="sectionheader">
+             <h2 class="section-title">Contact</h2>
+                <div class="info">
+                    <p>wassimbelarbi27@gmail.com</p>
+                    <h3>Entrez vos coordonnées ci-dessous pour me contacter</h3>
+                        
+                    
+                </div>
+                <form action="contact.php" class ="form"> <!--Balise label sert à créer un champ de sasie-->
+                    <label for ="firtsname">
+                    <input type ="text" name ='firtsname' id="firtsname" placeholder="Nom">
+                    </label>
+                    <label for ="lastname">
+                        <input type ="text" name ='lastname' id="lastname" placeholder="Prénom">
+                    </label>
+                    <label for ="email">
+                        <input type ="email" name ='email' id="email" placeholder="Email">
+                    </label>
+                    <textarea name="message" id="message" placeholder="Message"></textarea> <!--Text area sert à créer plus d'espace-->
+                    <input type="submit" class="btn"value="envoyer">
+                </form>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class= "container">
+        <div class="grid">
+            <div class="grid__item">
+                <p>Réalisation du site web : 
+                Wassim Belarbi et Badis Bouali pour la SAÉ 14</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>
